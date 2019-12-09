@@ -1,0 +1,148 @@
+@media print {
+    .tm-sidebar, 
+    .tm-team-img, 
+    .gallery-container, 
+    .carousel-indicators, 
+    section:last-of-type, 
+    ::before, 
+    ::after {
+        display: none !important;
+    }
+
+    div {
+        text-align: center;
+    }
+    
+    .heading ol {
+        column-count: 2;
+    }
+
+    .heading li {
+        list-style-type: none;
+    }
+}
+
+.tm-nav-item:hover {
+    background-color: lightskyblue;
+}
+
+.tm-nav-item-link:hover {
+    color: #fff;
+}
+
+.tm-banner {
+    background: linear-gradient(lightskyblue, burlywood);
+}
+
+.tm-banner-inner {
+    background: #fff;
+}
+
+.tm-banner-text {
+    text-shadow: 5px 5px 3px #333;
+}
+
+@keyframes bannerAnimation {
+    from {left: 200px;}
+    to {left: 0;}
+}
+
+.tm-banner-text {
+    animation-name: bannerAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    position: relative;
+}
+
+.flex-2-col {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.box-bg:hover {
+    background-color: lightgray;
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.heading h2 {
+    color: lightskyblue;
+    text-align: center;
+}
+
+.heading ol {
+    list-style-type: lower-alpha;
+}
+
+.heading li:hover::before {
+    content: ">";
+    font-weight: bold;
+}
+
+.heading .text::after {
+    display: inline-block;
+    content: "New";
+    color: red;
+    font-weight: bold;
+    font-size: x-small;    
+    vertical-align: super;
+}
+
+.blocks .tm-section-description:last-child {
+    word-spacing: 5px;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+
+.blocks li.box-work {
+    padding: 10px;
+}
+
+.blocks li.box-work:nth-of-type(odd) {
+    background: lightskyblue;
+    color: #fff;
+}
+
+.blocks .box-work p::first-letter {
+    font-weight: bold;
+}
+
+p.tm-section-description {
+    text-indent: 25px;
+    line-height: 30px;
+}
+
+.form-group input:focus {
+    background: lightskyblue;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: solid lightskyblue;
+}
+
+button[type = "submit"] {
+    float: right;
+    background-color: #fff;
+    border-color: lightskyblue;
+    color: lightskyblue;
+}
+
+.form-group textarea {
+    border-color: lightskyblue;
+}
+
+.tm-sidebar, 
+.tm-content-header, 
+section {
+    box-shadow: 0px 0px 10px 0px rgba(66, 55, 61, 0.7);
+}
+
+section::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 50px solid lightskyblue;
+    border-right: 50px solid transparent;
+}
