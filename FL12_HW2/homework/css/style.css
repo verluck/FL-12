@@ -131,6 +131,9 @@ button[type = "submit"] {
 
 .form-group textarea {
     border-color: lightskyblue;
+    background: url("../img/email-icon.png") no-repeat;
+    background-size: 30px;
+    background-position: calc(100% - 10px) calc(100% - 10px);
 }
 
 .tm-sidebar, 
