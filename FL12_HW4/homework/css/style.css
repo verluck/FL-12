@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+
+p {
+    color: #777;
+}
+
+a {
+    text-decoration-line: none;
+    color: #777;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    color: #bfba55;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.button_rounded {
+    padding: 5px 10px;
+    background: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+    color: #777;
+}
+
+.top-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+
+.top-bar a:hover {
+    color: #bfba55;
+}
+
+.logo a{
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item a {
+    margin: 0 1em;
+    color: #777;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/home-bg.jpg") top no-repeat;
+    background-size: cover;
+}
+
+.home__header {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.home__header>h1 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 4.5em;
+    margin-bottom: 0;
+}
+
+.home__header>p {
+    color: #bfba55;
+}
+
+.blog {
+    margin: 5% 20%;
+}
+
+.blog__post {
+    border-bottom: lightgray 1px solid;
+    padding: 50px 0;
+}
+
+.blog__post:last-child {
+    border-bottom: none;
+}
+
+.post__image {
+    width: 100%;
+}
+
+.post__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.post__info a {
+    white-space: nowrap;
+}
+
+.post__info a, .post__info time, .comments {
+    margin-right: 1.5em;
+    color: #777;
+}
+
+.author-icon {
+    width: 2em;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #000000;
+    color: #ffffff;
+    padding: 3% 20%;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    color: #777;
+}
+
+.about, .contact-info {
+    width: 40%;
+}
