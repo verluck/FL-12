@@ -40,7 +40,7 @@ Do you want to continue?`)) {
           nextLevel = true;
           level++;
           prizePool += prizePool;
-        }	else {
+        } else {
           alert(`Thank you for your participation.
 Your prize is: ${totalPrize}$.`);
           nextLevel = false;
