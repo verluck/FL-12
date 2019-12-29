@@ -1,28 +1,28 @@
 const minEmailLength = 5;
 const validPassword = /\w{6,}/;
 let profiles = [
-	{
-		email: 'user@gmail.com',
-		password: 'UserPass'
-	},
-	{
-		email: 'admin@gmail.com',
-		password: 'AdminPass'
-	}
+  {
+    email: 'user@gmail.com',
+    password: 'UserPass'
+  },
+  {
+    email: 'admin@gmail.com',
+    password: 'AdminPass'
+  }
 ];
 let account, password, newPassword, confirmPassword;
 let email = prompt('Your email:');
 if (!email) {
-	alert('Canceled.');
+  alert('Canceled.');
 } else if (email.trim().length < minEmailLength) {
   alert('I don\'t know any emails having name length less than 5 symbols.');
   email = false;  
 } else {
-	for (let profile of profiles) {
-		if (email.toLocaleLowerCase() === profile.email) {
-			account = profile;
-		}
-	}
+  for (let profile of profiles) {
+    if (email.toLocaleLowerCase() === profile.email) {
+      account = profile;
+    }
+  }
 }
 if (account) {
   password = prompt('Your password:');
@@ -58,5 +58,5 @@ if (account) {
     }
   }
 } else if (email) {
-	alert('I don\'t know you');
+  alert('I don\'t know you');
 }
