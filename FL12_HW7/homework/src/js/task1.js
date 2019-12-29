@@ -50,7 +50,7 @@ if (account) {
             alert('You wrote the wrong password.');
           }
         } else {
-          alert('It\'s too short password. Sorry.')
+          alert('It\'s too short password. Sorry.');
         }
       }
     } else {
